@@ -1,4 +1,5 @@
 import React from "react"
+import { motion } from "framer-motion"
 
 import "../assets/css/components/home.css";
 
@@ -7,22 +8,28 @@ export const Home = () => {
     <>
       <div className="home">
         <div className="home__container">
-          <div className="app">
+          <motion.div 
+            className="app"
+            whileTap={{ scale: 1.8 }}
+          >
             <a href="/bio">
             </a>
-          </div>
-          <div className="app">
+          </motion.div>
+          <motion.div
+            className="app"
+            whileTap={{ scale: 10 }}
+          >
             <a href="/work">
             </a>
-          </div>
-          <div className="app">
+          </motion.div>
+          <motion.div className="app">
             <a href="/contact">
             </a>
-          </div>
-          <div className="app">
+          </motion.div>
+          <motion.div className="app">
             <a href="https://github.com/deguchi37458">
             </a>
-          </div>
+          </motion.div>
         </div>
         <div className="nav">
         

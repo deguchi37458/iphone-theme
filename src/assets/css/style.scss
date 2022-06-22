@@ -1,5 +1,16 @@
 .back {
   width: 100%;
   height: 100vh;
-  background-color: gray;
+  background-image: url("../img/home-image.jpg");
+  background-size: cover;
+}
+
+// header
+.header {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  &__right {
+  }
 }

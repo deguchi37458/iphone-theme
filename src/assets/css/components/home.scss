@@ -1,0 +1,14 @@
+.home {
+  padding: 62px 20px 100px;
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  justify-content: space-evenly;
+  .app {
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    background-color: #fff;
+    margin-bottom: 30px;
+  } 
+}

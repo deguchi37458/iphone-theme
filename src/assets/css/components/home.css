@@ -1,0 +1,16 @@
+.home {
+  padding: 62px 20px 100px;
+  color: #fff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (80px)[3];
+      grid-template-columns: repeat(3, 80px);
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
+  .home .app {
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    background-color: #fff;
+    margin-bottom: 30px; }

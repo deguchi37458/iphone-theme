@@ -24,6 +24,9 @@ export const Home = () => {
             </a>
           </div>
         </div>
+        <div className="nav">
+        
+        </div>
       </div>
     </>
   );

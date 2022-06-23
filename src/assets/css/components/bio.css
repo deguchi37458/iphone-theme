@@ -1,4 +1,10 @@
 .bio {
+  color: #fff;
   width: 100%;
   height: 100vh;
-  background-color: #fff; }
+  background-color: #000; }
+  .bio__container {
+    padding: 62px 20px 100px; }
+    .bio__container h1 {
+      font-size: 24px;
+      margin-bottom: 20px; }

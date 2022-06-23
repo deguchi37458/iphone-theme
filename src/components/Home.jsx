@@ -4,32 +4,50 @@ import { motion } from "framer-motion"
 import "../assets/css/components/home.css";
 
 export const Home = () => {
+
+  const apps = [
+    {
+      id: "bio",
+      title: "bio",
+      link: "/bio"
+    },
+    {
+      id: "work",
+      title: "work",
+      link: "/work"
+    },
+    {
+      id: "contact",
+      title: "contact",
+      link: "/contact"
+    },
+    {
+      id: "GitHub",
+      title: "GitHub",
+      link: "https://github.com/deguchi37458"
+    },
+  ]
+
+  console.log(apps);
+
   return (
     <>
       <div className="home">
         <div className="home__container">
-          <motion.div 
-            className="app"
-            whileTap={{ scale: 1.8 }}
-          >
-            <a href="/bio">
-            </a>
-          </motion.div>
-          <motion.div
-            className="app"
-            whileTap={{ scale: 10 }}
-          >
-            <a href="/work">
-            </a>
-          </motion.div>
-          <motion.div className="app">
-            <a href="/contact">
-            </a>
-          </motion.div>
-          <motion.div className="app">
-            <a href="https://github.com/deguchi37458">
-            </a>
-          </motion.div>
+          {apps.map((app) => {
+            return (
+              <div className="app-box">
+                <motion.div 
+                  className="app-icon"
+                  whileTap={{ scale: 1.8 }}
+                >
+                  <a href={app.link}>
+                  </a>
+                </motion.div>
+                <span className="app-title">{app.title}</span>
+              </div>
+            )
+          })}
         </div>
         <div className="nav">
         

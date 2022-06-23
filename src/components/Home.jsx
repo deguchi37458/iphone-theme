@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion"
 
 import homeImage from '../assets/img/home-image.jpg'
@@ -11,7 +12,6 @@ const home = css`
   background-size: cover;
   width: 100%;
   height: 100vh;
-  /* background-color: #000; */
 `;
 
 const container = css`
@@ -28,7 +28,7 @@ const appBox = css`
 `;
 
 const appIcon = css`
-   width: 80px;
+  width: 80px;
   height: 80px;
   border-radius: 15px;
   background-color: #fff;
@@ -89,8 +89,7 @@ export const Home = () => {
                   css={appIcon}
                   whileTap={{ scale: 1.8 }}
                 >
-                  <a href={app.link}>
-                  </a>
+                  <Link to={app.link}></Link>
                 </motion.div>
                 <span>{app.title}</span>
               </div>

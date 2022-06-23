@@ -14,8 +14,8 @@ export const App = () => {
       <BrowserRouter>
         <Header/>
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/bio" element={<Bio />} />
+          <Route exact path="/" element={<Home/>} />
+          <Route path="/bio" element={<Bio/>} />
         </Routes>
       </BrowserRouter>
     </>

@@ -7,8 +7,9 @@
     padding: 62px 20px 100px;
     color: #fff;
     display: grid;
-    grid-template-columns: repeat(3, 80px);
+    grid-template-columns: repeat(auto-fill, 80px);
     justify-content: space-around;
+    gap: 30px;
     .app {
       width: 80px;
       height: 80px;
